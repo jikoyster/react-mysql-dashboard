@@ -35,7 +35,7 @@ const SidebarContent : MenuItem[] = [
         isPro: false,
       },
       {
-        name: "Zone",
+        name: "Zones",
         icon: "solar:alarm-sleep-broken",
         id: uniqueId(),
         url: "#",
