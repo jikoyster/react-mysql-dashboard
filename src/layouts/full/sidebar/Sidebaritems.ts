@@ -52,6 +52,7 @@ const SidebarContent : MenuItem[] = [
   }
 ];
 
+/*
 const SidebarContent2 : MenuItem[] = [
   {
     heading: "HOME",
@@ -1263,5 +1264,6 @@ const SidebarContent2 : MenuItem[] = [
     ],
   },
 ];
+*/
 
 export default SidebarContent;
