@@ -1,0 +1,1 @@
+import{j as e}from"./index-m92goVum.js";const t=()=>e.jsx(e.Fragment,{children:e.jsxs("div",{children:[e.jsx("h5",{children:"Test Page"}),e.jsx("div",{children:"test page"})]})});export{t as default};

@@ -1,7 +1,6 @@
-
 import {  Sidebar } from "flowbite-react";
 import SidebarContent from "./Sidebaritems";
-import NavItems from "./NavItems";
+ import NavItems from "./NavItems";
 // @ts-ignore
 import SimpleBar from "simplebar-react";
 import React from "react";
@@ -24,6 +23,7 @@ const SidebarLayout = () => {
           <div className="px-6 py-4 flex items-center sidebarlogo">
             {/* <FullLogo /> */}
           </div>
+          
           <SimpleBar className="h-[calc(100vh_-_150px)]">
             <Sidebar.Items className="px-5 mt-2">
               <Sidebar.ItemGroup className="sidebar-nav hide-menu">
@@ -35,7 +35,7 @@ const SidebarLayout = () => {
                           {item.heading}
                         </h5>
                         {item.children?.map((child, index) => (
-                        <React.Fragment key={child.id && index}>
+                         <React.Fragment key={child.id && index}>
                           {child.children ? (
                             <div className="collpase-items">
                               <NavCollapse item={child} />
@@ -44,6 +44,7 @@ const SidebarLayout = () => {
                             <NavItems item={child} />
                           )}
                         </React.Fragment>
+                        
                       ))}
                       </React.Fragment>
                     </div>
@@ -52,6 +53,7 @@ const SidebarLayout = () => {
             </Sidebar.Items>
           </SimpleBar>
           <Upgrade/>
+
         </Sidebar>
       </div>
     </>

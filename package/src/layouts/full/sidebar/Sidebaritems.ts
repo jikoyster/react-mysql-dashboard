@@ -23,7 +23,37 @@ export interface MenuItem {
 
 import { uniqueId } from "lodash";
 
-const SidebarContent: MenuItem[] = [
+const SidebarContent : MenuItem[] = [
+  {
+    heading: "HOME",
+    children: [
+      {
+        name: "Dashboard",
+        icon: "solar:widget-add-line-duotone",
+        id: uniqueId(),
+        url: "/",
+        isPro: false,
+      },
+      {
+        name: "Zones",
+        icon: "solar:alarm-sleep-broken",
+        id: uniqueId(),
+        url: "#",
+        isPro: false,
+      },
+      {
+        name: "Crops",
+        icon: "solar:chart-line-duotone",
+        id: uniqueId(),
+        url: "#",
+        isPro: false,
+      },
+    ]
+  }
+];
+
+/*
+const SidebarContent2 : MenuItem[] = [
   {
     heading: "HOME",
     children: [
@@ -105,7 +135,7 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-      */
+      
     ],
   },
   {
@@ -1234,5 +1264,6 @@ const SidebarContent: MenuItem[] = [
     ],
   },
 ];
+*/
 
 export default SidebarContent;
