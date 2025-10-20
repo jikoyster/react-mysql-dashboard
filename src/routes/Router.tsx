@@ -17,8 +17,14 @@ const Alert = lazy(() => import("../views/alerts/Alerts"));
 
 
 // icons
-const Solar = lazy(() => import("../views/icons/Solar"));
+const Icons = lazy(() => import("../views/icons/Solar"));
 const Test = lazy(() => import("../views/pages/Test.js"));
+
+// zones
+const Zones = lazy(() => import("../views/pages/zones/index"));
+  const ZonesForm = lazy(() => import("../views/pages/zones/form"));
+//crops
+const Crops = lazy(() => import("../views/pages/crops/index"));
 
 
 // authentication
@@ -32,8 +38,12 @@ const Router = [
     path: '/',
     element: <FullLayout />,
     children: [
-      { path: '/icons', exact: true, element: <Solar /> },
+      { path: '/icons', exact: true, element: <icons /> },
       { path: '/test', exact: true, element: <Test /> },
+
+      { path: '/zones', exact: true, element: <Zones /> },
+        { path: '/zones/form', exact: true, element: <ZonesForm /> },
+      { path: '/crops', exact: true, element: <Crops /> },
 
 
       { path: '/', exact: true, element: <Dashboard /> },

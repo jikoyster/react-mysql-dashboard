@@ -38,14 +38,14 @@ const SidebarContent: MenuItem[] = [
         name: "Zone",
         icon: "solar:alarm-sleep-broken",
         id: uniqueId(),
-        url: "#",
+        url: "/zones",
         isPro: false,
       },
       {
-        name: "Plants",
+        name: "Crops",
         icon: "solar:chart-line-duotone",
         id: uniqueId(),
-        url: "#",
+        url: "/crops",
         isPro: false,
       },
       /*{
