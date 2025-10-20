@@ -38,7 +38,7 @@ const Router = [
     path: '/',
     element: <FullLayout />,
     children: [
-      { path: '/icons', exact: true, element: <icons /> },
+      { path: '/icons', exact: true, element: <Icons /> },
       { path: '/test', exact: true, element: <Test /> },
 
       { path: '/zones', exact: true, element: <Zones /> },
