@@ -29,6 +29,49 @@ const SidebarContent: MenuItem[] = [
     children: [
       {
         name: "Dashboard",
+        icon: "solar:widget-bold-duotone",
+        id: uniqueId(),
+        url: "/",
+        isPro: false,
+      },
+      {
+        name: "Zone",
+        icon: "solar:streets-map-point-bold-duotone",
+        id: uniqueId(),
+        url: "/zones",
+        isPro: false,
+      },
+      {
+        name: "Crops",
+        icon: "solar:leaf-bold-duotone",
+        id: uniqueId(),
+        url: "/crops",
+        isPro: false,
+      },
+    ],
+  },
+  {
+    heading: "TEMPORARIES",
+    children: [
+      {
+        name: "icons",
+        icon: "solar:archive-bold-duotone",
+        id: uniqueId(),
+        url: "/icons",
+        isPro: false,
+      },
+    ],
+  },
+];
+
+{/*
+
+const SidebarContent: MenuItem[] = [
+  {
+    heading: "HOME",
+    children: [
+      {
+        name: "Dashboard",
         icon: "solar:widget-add-line-duotone",
         id: uniqueId(),
         url: "/",
@@ -48,7 +91,7 @@ const SidebarContent: MenuItem[] = [
         url: "/crops",
         isPro: false,
       },
-      /*{
+      {
         name: "COOP",
         icon: "solar:screencast-2-line-duotone",
         id: uniqueId(),
@@ -105,7 +148,7 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-      */
+      
     ],
   },
   {
@@ -1234,5 +1277,7 @@ const SidebarContent: MenuItem[] = [
     ],
   },
 ];
+
+*/}
 
 export default SidebarContent;
