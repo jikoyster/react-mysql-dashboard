@@ -52,7 +52,7 @@ const Router = [
       { path: '/ui/form', exact: true, element: <Form /> },
       { path: '/ui/alert', exact: true, element: <Alert /> },
       { path: '/ui/shadow', exact: true, element: <Shadow /> },
-      { path: '/icons/solar', exact: true, element: <Solar /> },
+      { path: '/icons/solar', exact: true, element: <Icons /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
       { path: '*', element: <Navigate to="/auth/404" /> },
     ],
