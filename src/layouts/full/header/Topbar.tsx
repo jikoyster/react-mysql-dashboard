@@ -63,7 +63,7 @@ const Topbar = () => {
             <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
                 <div className="md:flex hidden items-center gap-5">
 
-                    <Link target="" to="http://localhost:5173">
+                    <Link target="" to="/">
                         <img src={terrasync_logo} alt="logo" width={150} />
                     </Link>
 
